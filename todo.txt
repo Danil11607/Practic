@@ -1,0 +1,54 @@
+Структура Poll:
+Type = ...
+Pass = ...
+Q1:
+{
+ACount =
+QType = test
+A1: ...
+A2: ///
+A3: asd
+}
+Q2:
+{
+QType = Question
+}
+Q3:
+{
+QType = skiptest
+A1->Q4: ///
+A2->Q7: ...
+A3->Q5: .a/
+}
+Q4:
+{
+QType = multitest
+A1: ///
+A2: ...
+A3: dfa
+}
+
+Структура для AnswerList:
+
+PollType==anon:
+Q1:
+A1:Count
+A2:Count
+A3:Count
+Q2:
+Answers string[]
+Q3:
+A1:Count
+A2:Count
+A3:Count
+Q4:
+A1:Count
+A2:Count
+A3:Count
+
+PollType==half-anon
+UserAnswers string[] = Q1.answer; Q2.answer; Q3.answer;
+
+PollType==notanon
+UserAnswers string[] = Q1.answer; Q2.answer; Q3.answer;
+User
