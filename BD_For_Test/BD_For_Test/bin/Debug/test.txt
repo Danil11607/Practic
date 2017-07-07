@@ -1,0 +1,24 @@
+Type = 0
+Pass = 123
+QCount = 3
+Q1: content1
+{
+ACount = 3
+QType = test
+A1: ...
+A2: ///
+A3: asd
+}
+Q2: content2
+{
+QType = question
+A1: text
+}
+Q3: content3
+{
+ACount = 3
+QType = testMulti
+A1: ///
+A2: ...
+A3: dfa
+}

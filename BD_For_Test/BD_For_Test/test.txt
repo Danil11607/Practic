@@ -1,0 +1,22 @@
+Type = nonanon
+Pass = 123
+Q1: content1
+{
+ACount = 3
+QType = test
+A1: ...
+A2: ///
+A3: asd
+}
+Q2: content2
+{
+QType = Question
+}
+Q3: content3
+{
+ACount = 3
+QType = multitest
+A1: ///
+A2: ...
+A3: dfa
+}

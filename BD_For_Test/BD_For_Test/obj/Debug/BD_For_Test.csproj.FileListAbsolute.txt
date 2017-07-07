@@ -1,0 +1,10 @@
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\BD_For_Test.exe.config
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\BD_For_Test.exe
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\BD_For_Test.pdb
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\EntityFramework.dll
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\EntityFramework.xml
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\obj\Debug\BD_For_Test.csprojResolveAssemblyReference.cache
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\obj\Debug\BD_For_Test.exe
+C:\Users\Evgeny\Documents\Visual Studio 2017\Projects\BD_For_Test\BD_For_Test\obj\Debug\BD_For_Test.pdb
