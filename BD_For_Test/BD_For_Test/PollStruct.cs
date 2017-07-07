@@ -11,7 +11,7 @@ namespace PollStruct
 		public string token;
 		public string password;
 		public List<Question> Questions = new List<Question>();
-
+		
 		public Poll(string token, int count, string password, pollType type)
 		{
 			this.count = count;
@@ -25,8 +25,7 @@ namespace PollStruct
 		public int Id { get; set; }
 		public string Content;
 		public Question skipTo;// убрать все пропуски
-		public Node nd;
-
+		
 		public Answer(string answer, Question skipTo = null)
 		{
 			this.Content = answer;
@@ -36,6 +35,8 @@ namespace PollStruct
 
 	class Question
 	{
+		public int Id { get; set; }
+		public Node nd;
 		public enum questionType { test, testMulti, testSkip, question };
 		public questionType type;
 		public string content;
