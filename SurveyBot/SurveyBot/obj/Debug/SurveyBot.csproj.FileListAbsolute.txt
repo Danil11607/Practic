@@ -31,3 +31,36 @@ c:\users\arsile\documents\visual studio 2017\Projects\SurveyBot\SurveyBot\bin\De
 c:\users\arsile\documents\visual studio 2017\Projects\SurveyBot\SurveyBot\obj\Debug\SurveyBot.csprojResolveAssemblyReference.cache
 c:\users\arsile\documents\visual studio 2017\Projects\SurveyBot\SurveyBot\obj\Debug\SurveyBot.exe
 c:\users\arsile\documents\visual studio 2017\Projects\SurveyBot\SurveyBot\obj\Debug\SurveyBot.pdb
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\SurveyBot.exe.config
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\SurveyBot.exe
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\SurveyBot.pdb
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.AppContext.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Console.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Diagnostics.Tracing.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.IO.Compression.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.IO.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.IO.FileSystem.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Net.Http.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Net.Sockets.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Reflection.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Runtime.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Runtime.Extensions.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Runtime.InteropServices.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\Telegram.Bot.dll
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\obj\Debug\SurveyBot.csprojResolveAssemblyReference.cache
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\obj\Debug\SurveyBot.exe
+C:\Users\Arsile\Documents\GitHub\Practic\SurveyBot\SurveyBot\obj\Debug\SurveyBot.pdb
