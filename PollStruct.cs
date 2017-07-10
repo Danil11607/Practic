@@ -1,62 +1,59 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Iter1
+namespace PollStruct
 {
     class Poll
     {
-        int numberOfQuestions;
-        string tag;
-        bool asked = false;
+        public enum pollType { anon, halfanon, nonanon};
+        public pollType type;
+        private int count;
+        public string token;
+        public string password;
+        public List<Question> Questions;
 
-        Poll(string tag, int numberOfQuestions)
+        public Poll(string token, int count, string password, pollType type)
         {
-            this.numberOfQuestions = numberOfQuestions;
-            this.tag = tag;
-            Question[] questionArr = new Question[numberOfQuestions];
-            for (int i = 0; i < numberOfQuestions; i++)
-            {
-                Question questionTemp = new Question(/*parse*/);
-                questionArr[i] = questionTemp;
-            }
-
+            this.count = count;
+            this.token = token;
+            this.type = type;
+            List<Question> questions = new List<Question>();
         }
     }
 
     class Answer
     {
-        enum answerType { single, multi, textSingle, textMulti };
-        string answer;
-        answerType type = new answerType();
-        int skipTo;
+        public string Content;
+        public Question skipTo;// убрать все пропуски
 
-        Answer(string answer, answerType type, int skipTo = 0)
+        public Answer(string answer, Question skipTo = null)
         {
-            this.answer = answer;
-            this.type = type;
-            this.skipTo = skipTo;
+            this.Content = answer;
+            this.skipTo = skipTo;// убрать все пропуски
         }
     }
 
     class Question
     {
-        string question;
-        int numberOfAnswers;
-        bool asked = false;
+        public enum questionType { test, testMulti, testSkip, question };
+        public questionType type;
+        public string content;
+        public int count;
+        public List<Answer> Answers;
 
-        Question(string question, int numberOfAnswers)
+        public Question(string content, questionType type, int count)
         {
-            this.question = question;
-            this.numberOfAnswers = numberOfAnswers;
-            Answer[] answerArr = new Answer[numberOfAnswers];
-            for (int i = 0; i < numberOfAnswers; i++)
-            {
-                Answer answerTemp = new Answer(/*parse*/);
-                answerArr[i] = answerTemp;
-            }
+            this.content = content;
+            this.type = type;
+            this.count = count;
+            List<Answer> Answers = new List<Answer>();
+        }
+    }
+    class Program
+    {
+        public void Main()
+        {
+            PollReader pr = new PollReader();
+            Poll poll = pr.ReadPoll();
         }
     }
 }
