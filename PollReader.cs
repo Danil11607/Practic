@@ -50,14 +50,27 @@ namespace PollStruct
                     Question question = new Question(questionContent, qType, aCount);
                     poll.Questions.Add(question);
 
+                    int tempSkipTo = -1;
+
                     int j = 1;
                     while (!text.StartsWith("}"))
                     {
                         text = sr.ReadLine();
                         if (text.StartsWith($"A{j}"))
                         {
+                            if (text.Contains($"A{j}->"))
+                            {
+                                string[] tempStrings = text.Split(':');
+                                tempSkipTo = Convert.ToInt32(tempStrings[0].Substring(text.IndexOf('>')).Trim()); 
+                            }
+
                             string tempAnswer = text.Substring(text.IndexOf(':')).Trim();
-                            Answer answer = new Answer(tempAnswer);
+                            Answer answer;
+                            if (tempSkipTo != -1)
+                                answer = new Answer(tempAnswer, tempSkipTo);
+                            else
+                                answer = new Answer(tempAnswer);
+
                             poll.Questions[i].Answers.Add(answer);
                             j++;
                         }

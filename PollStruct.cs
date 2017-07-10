@@ -23,9 +23,9 @@ namespace PollStruct
     class Answer
     {
         public string Content;
-        public Question skipTo;// убрать все пропуски
+        public int skipTo;// убрать все пропуски
 
-        public Answer(string answer, Question skipTo = null)
+        public Answer(string answer, int skipTo = -1)
         {
             this.Content = answer;
             this.skipTo = skipTo;// убрать все пропуски
