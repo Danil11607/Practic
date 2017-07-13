@@ -1,35 +1,94 @@
 {
-"Poll":
+"Id":0,
+"Type":0,
+"TrueAnon":false,
+"Count":3,
+"Token":"test",
+"Password":"abc",
+"Questions":
+[
 {
-	"type":"anon",
-	"pass":"1337",
-	"Questions":
-	[ 
+	"Type":0,
+	"Answers":
+	[
 	{
-		"content":"В чем смысл жизни?",
-		"ACount":"4",
-		"QType":"test",
-		"Answers":
-		[
-			{"A1":"В кодинге, брат"},
-			{"A2":"В пинании, брат"},
-			{"A3":"Смысла нет, выхода нет"},
-			{"A4":"Затрудняюсь ответить"}
-		]
+		"Id":0,
+		"Content":"..."
+		,"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
 	},
-	
 	{
-		"content":"В чем смысл Учебы?",
-		"ACount":"4",
-		"QType":"test",
-		"Answers":
-		[
-			{"A1":"В кодинге, брат"},
-			{"A2":"В пинании, брат"},
-			{"A3":"Смысла нет, выхода нет"},
-			{"A4":"Затрудняюсь ответить"}
-		]
+		"Id":0,
+		"Content":"///",
+		"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
+	},
+		{"Id":0,
+		"Content":"asd",
+		"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
+	}
+	],
+	"Id":0,
+	"Content":"content1",
+	"Count":3,
+	"Image":null,
+	"PollId":0,
+	"PollParent":null
+},
+{
+	"Type":3,
+	"Answers":
+	[
+	{
+		"Id":0,
+		"Content":"text",
+		"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
+	}
+	],
+	"Id":0,
+	"Content":"content2",
+	"Count":1,
+	"Image":null,
+	"PollId":0,
+	"PollParent":null
+},
+{
+	"Type":1,
+	"Answers":
+	[
+	{
+		"Id":0,
+		"Content":"///",
+		"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
+	},
+	{	"Id":0,
+		"Content":"...",
+		"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
+	},
+	{
+		"Id":0,
+		"Content":"dfa",
+		"SkipTo":-1,
+		"QuestionId":0,
+		"QuestionParent":null
+	}
+	],
+	"Id":0,
+	"Content":"content3",
+	"Count":3,
+	"Image":null,
+	"PollId":0,
+	"PollParent":null
 	}
 	]
-}
 }

@@ -1,43 +1,33 @@
 ﻿using System;
 using System.IO;
-using static PollStruct.Poll;
-using static PollStruct.Question;
+using PollStruct;
 using Newtonsoft.Json;
 
 namespace PollStruct
 {
-    class JsonPoll
-    {
-        public string type;
-        public string pass;
-        public JsonPoll Q1;
-
-    }
-
     class PollReader
     {
         public Poll ReadPoll()
         {
-            StreamReader sr = new StreamReader("Test.txt");
-            string text = null;
-
+            StreamReader sr = new StreamReader("test.txt");
+            string text = "";
             while (!text.Contains("Type"))
                 text = sr.ReadLine();
             string[] tempText = text.Split('=');
             int type = Convert.ToInt32(tempText[1].Trim());
-            pollType enmType = (pollType)type;
+            Poll.pollType enmType = (Poll.pollType)type;
 
             while (!text.Contains("Pass"))
                 text = sr.ReadLine();
             tempText = text.Split('=');
-            string password = tempText[2].Trim();
-
+            string password = tempText[1].Trim();
+            text = "";
             while (!text.Contains("QCount"))
                 text = sr.ReadLine();
             tempText = text.Split('=');
             int numberOfQuestions = Convert.ToInt32(tempText[1].Trim());
 
-            Poll poll = new Poll("Test", numberOfQuestions, password, enmType );
+            Poll poll = new Poll("test", "abc", numberOfQuestions);
 
 
             int i = 1;
@@ -55,9 +45,9 @@ namespace PollStruct
                     while (!text.StartsWith("QType"))
                         text = sr.ReadLine();
                     string qType1 = text.Substring(text.IndexOf('=') + 1);
-                    questionType qType = (questionType)Enum.Parse(typeof(questionType), qType1);
+                    Question.questionType qType = (Question.questionType)Enum.Parse(typeof(Question.questionType), qType1);
 
-                    Question question = new Question(questionContent, qType, aCount);
+                    Question question = new Question(content: questionContent, type: qType, count: aCount, pollId: poll.Id);
                     poll.Questions.Add(question);
 
                     int j = 1;
@@ -66,9 +56,9 @@ namespace PollStruct
                         text = sr.ReadLine();
                         if (text.StartsWith($"A{j}"))
                         {
-                            string tempAnswer = text.Substring(text.IndexOf(':')).Trim();
-                            Answer answer = new Answer(tempAnswer);
-                            poll.Questions[i].Answers.Add(answer);
+                            string tempAnswer = text.Substring(text.IndexOf(':') + 1).Trim();
+                            Answer answer = new Answer(content: tempAnswer, questionId: question.Id);
+                            poll.Questions[i - 1].Answers.Add(answer);
                             j++;
                         }
 
@@ -77,18 +67,18 @@ namespace PollStruct
                     i++;
                 }
             }
+            //foreach (var it in poll.Questions)
+            //    Console.WriteLine(it);
+            //Console.WriteLine(JsonConvert.SerializeObject(poll));
             sr.Close();
             return poll;
         }
-        
 
         public Poll ReadJsonPoll()
         {
             StreamReader sr = new StreamReader("JsonTest.txt");
             string allText = sr.ReadToEnd();
-
             Poll poll = JsonConvert.DeserializeObject<Poll>(allText);
-            
 
             return poll;
         }
