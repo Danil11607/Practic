@@ -35,6 +35,11 @@ namespace analyze
 		public  class textMulti { public static int count { get; set; } }
 		public  class textSingle { public static int count { get; set; } }
 	}
+
+
+
+
+
 	class struct_poll :IAnalyse// для работы необходим доступ к классу с данными о опроснике,а именно
 	{                          // количество вопросов,их тип и количество вариантов ответа для каждого
 		                       // вопроса
